@@ -33,7 +33,7 @@ function jsTask(done) {
             presets: ['@babel/preset-env']
         }))
         .pipe(concat('main.bundle.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(dest(config.dist.base))
     done();
 }
